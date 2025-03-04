@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class DistanceCalculator {
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	System.out.print("Enter the  distance in feet : ");
+	double distanceInFeet = scanner.nextDouble();
+	double distanceInYards = distanceInFeet / 3.0;
+        double distanceInMiles = distanceInFeet / 5280.0;
+        System.out.println("Distance in yards: " + distanceInYards);
+        System.out.println("Distance in miles: " + distanceInMiles);
+		scanner.close();
+    }
+}
